@@ -1,0 +1,27 @@
+.directory
+{
+    width: 100%;
+    display: flex; //if we use flex-wrap:-webkit-inline-box then in same margin they come in a line
+    flex-wrap:wrap-reverse;  //if we use flex-wrap:-webkit-inline-box then they will come in a line with equal portion divided in between all 5 menu items;
+    justify-content:space-between;
+}
+
+@media screen and (max-width: 400px) {
+    .directory
+{
+    width: 100%;
+    display: block;
+    flex-wrap:wrap;  //if we use flex-wrap:-webkit-inline-box then they will come in a line with equal portion divided in between all 5 menu items;
+    justify-content:space-between;
+} 
+  }
+
+  @media screen and (max-width: 700px) {
+    .directory
+{
+    width: 100%;
+    display: block;
+    flex-wrap:wrap;  //if we use flex-wrap:-webkit-inline-box then they will come in a line with equal portion divided in between all 5 menu items;
+    justify-content:space-between;
+} 
+  }
